@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const Background = styled.div`
+export const Background = styled.section`
   background: -webkit-linear-gradient(
     to bottom right,
     black,
@@ -16,22 +16,25 @@ export const Background = styled.div`
     #203a43 55%,
     #021133 70%
   );
-  height: 100%;
+  
+  height: 100vh;
   width: 100%;
-  padding: 8rem 0;
+  padding-top: 8rem; 
+  overflow-x: hidden;
 
   .container {
-    /* display: flex; */
+    display: flex;
     max-width: 1200px;
     /* max-height: 1000px; */
+    flex-direction: column;
     margin: 0 auto;
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
     /* align-items: center; */
     /* justify-content: space-evenly; */
-    width: 95%;
+    width: 100%;
     height: 100%;
     text-align: center;
-    gap: 4rem;
+    /* gap: 4rem; */
   }
 
 
@@ -39,6 +42,7 @@ export const Background = styled.div`
     display: flex;
     gap: 3rem;
     margin-top: 2rem;
+    padding-bottom: 2rem;
     justify-content: space-evenly;
     position: relative;
 
