@@ -4,8 +4,8 @@ import { FaDev } from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: #00040d;
-  height: 80px;
-  margin-top: -80px;
+  height: 70px;
+  margin-top: -70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 70px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
@@ -89,7 +89,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 70px;
 `;
 
 export const NavLink = styled(Link)`

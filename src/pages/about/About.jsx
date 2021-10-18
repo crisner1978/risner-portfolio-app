@@ -39,10 +39,9 @@ const About = ({ handleShowModal }) => {
               variants={showRight}
               initial="hidden"
               animate="visible">
-              I am addicted to coding. I'm a junior web developer, with a
-              passion for learning more. I enjoy problem solving and writing
-              clean efficient code. I aspire to create simple, intuitive and
-              elegant designs.
+              React JS and Redux are my passion. Building full stack projects with React JS and Redux,
+              utilizing Firebase, Serverless Frameworks or the MERN
+              stack is my current focus.
             </AboutDesc>
             <ButtonWrapper>
               <ButtonBig name="My Toolbox" primary onClick={handleShowModal} />

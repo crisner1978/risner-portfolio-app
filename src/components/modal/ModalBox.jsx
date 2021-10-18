@@ -84,6 +84,8 @@ const ModalBox = ({ showModal, setShowModal }) => {
                 <li>MongoDB</li>
                 <hr />
                 <li>Mongoose</li>
+                <hr />
+                <li>Chai</li>
               </ul>
             </BottomBox>
           </ModalWrapper>

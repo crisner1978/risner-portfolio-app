@@ -48,9 +48,9 @@ const Hero = () => {
             variants={showLeft}
             initial="hidden"
             animate="visible">
-            <span className="pro">Front End Web Developer</span>
+            <span className="pro">Front End Focused Developer <br/> - React JS and Redux</span>
             <br />
-            Working towards completing a Full Stack Developer Program.
+            - with Back End training in Node JS, Express, Mongoose, MongoDB and Chai.
           </Info>
           <ButtonWrapper>
             <ButtonBig name="View Projects" onClick={handleClick} primary />

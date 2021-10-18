@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const AboutWrapper = styled.div`
   position: relative;
   padding: 8rem 0;
-  height: 100vh;
+  height: 100%;
   background: -webkit-linear-gradient(
     to bottom right,
     black,
@@ -66,7 +66,7 @@ export const AboutDesc = styled(motion.div)`
   text-align: left;
   max-width: 500px;
   font-size: 1.3rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
   margin-top: 1rem;
   /* margin-left: 0; */
   padding: 1.2rem 1.2rem;

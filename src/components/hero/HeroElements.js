@@ -72,7 +72,7 @@ export const Info = styled(motion.div)`
   max-width: 401px;
   font-size: 1.3rem;
   color: #e9ebed;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
   margin-top: 1rem;
   padding: 1.2rem 1.2rem;
   background-color: #00040d;
