@@ -2,9 +2,10 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
-  position: relative;
-  padding: 8rem 0;
-  height: 100%;
+  /* position: relative; */
+  padding-top: 8rem; 
+  /* height: 100; */
+  width: 100%;
   background: -webkit-linear-gradient(
     to bottom right,
     black,
@@ -31,6 +32,7 @@ export const AboutWrapper = styled.div`
     height: 100%;
     text-align: left;
     gap: 2rem;
+    padding-bottom: 8rem;
   }
 
   .left {
