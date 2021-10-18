@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
   /* position: relative; */
-  padding-top: 8rem; 
-  /* height: 100; */
+  padding: 8rem 0 4rem 0;
+  margin: 0;
+  height: 100vh;
   width: 100%;
   background: -webkit-linear-gradient(
     to bottom right,
@@ -20,19 +21,20 @@ export const AboutWrapper = styled.div`
     #203a43 55%,
     #021133 70%
   );
+  
 
   .container {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
     align-items: center;
     justify-content: space-evenly;
     width: 95%;
     height: 100%;
     text-align: left;
     gap: 2rem;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
   }
 
   .left {
@@ -46,12 +48,15 @@ export const AboutWrapper = styled.div`
   @media only screen and (max-width: 768px) {
     height: 100%;
     .container {
+      height: 100%;
       flex-direction: column;
       text-align: center;
+      padding-bottom: 12rem;
     }
     .left,
     .right {
       width: 100%;
+      
     }
     .left {
       margin-top: 1rem;
