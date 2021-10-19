@@ -36,6 +36,16 @@ export const AboutWrapper = styled.div`
     gap: 2rem;
     padding-bottom: 4rem;
   }
+  .right {
+      max-width: 300px;
+      max-height: 300px;
+      background-color: #e9ebed;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: -10px 10px 10px #00040d;
+    }
 
   .left {
     margin-top: 3rem;
@@ -52,6 +62,7 @@ export const AboutWrapper = styled.div`
       flex-direction: column;
       text-align: center;
       padding-bottom: 12rem;
+      
     }
     .left,
     .right {
@@ -61,6 +72,7 @@ export const AboutWrapper = styled.div`
     .left {
       margin-top: 1rem;
     }
+    
     .section-title {
       text-align: left;
     }

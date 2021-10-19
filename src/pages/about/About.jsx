@@ -26,7 +26,7 @@ const About = ({ handleShowModal }) => {
       exit={{ opacity: 0, x: "100vw" }}
       transition={{ duration: 0.5 }}>
       <AboutWrapper>
-        <div className="container">
+        <motion.div className="container">
           <div className="left">
             <SectionTitle
               className="section-title"
@@ -50,18 +50,19 @@ const About = ({ handleShowModal }) => {
               {width <= breakpoint && <SocialButtons />}
             </SocialWrapper>
           </div>
-          <div className="right">
+          <motion.div
+              as={motion.div} initial={{ opacity: 0, x: "-100vw"}} animate={{ opacity: 1, x: 0}} transition={{delay: 0.5, duration: 0.5}} className="right">
             <motion.img
               initial={{ opacity: 0, scaleX: 0, scaleY: 0 }}
               animate={{ opacity: 1, scaleX: 1, scaleY: 1 }}
               exit={{ opacity: 0 }}
               transition={{ delay: 1, duration: 1 }}
-              style={{ width: "270px" }}
+              style={{ width: "270px", borderRadius: "10px" }}
               src={ProfileImg}
               alt="profile-img"
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </AboutWrapper>
     </motion.div>
   );
