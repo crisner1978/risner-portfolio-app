@@ -8,12 +8,12 @@ import {
   ButtonWrapper,
 } from "./HeroElements";
 import { motion } from "framer-motion";
-import SocialButtons from "../social/SocialButtons";
-import useViewport from "../useViewport";
-import ButtonBig from "../button/ButtonBig";
-import SectionTitle from "../sectionTitle/SectionTitle";
+import SocialButtons from "../../components/social/SocialButtons";
+import useViewport from "../../components/useViewport";
+import ButtonBig from "../../components/button/ButtonBig";
+import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import { useHistory } from "react-router-dom";
-import TextAnimation from "../animations/TextAnimation";
+import TextAnimation from "../../components/animations/TextAnimation";
 
 //framer motion variant
 const showLeft = {

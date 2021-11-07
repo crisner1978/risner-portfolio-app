@@ -1,14 +1,13 @@
-import "./App.css";
-import { Switch, Route, useLocation } from "react-router-dom";
 import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { Route, Switch, useLocation } from "react-router-dom";
+import "./App.css";
+import Hero from "./pages/hero/Hero";
+import ModalBox from "./components/modal/ModalBox";
 import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
-import Home from "./pages/Home";
 import About from "./pages/about/About";
-import Projects from "./pages/projects/Projects";
 import Contact from "./pages/contact/Contact";
-import ModalBox from "./components/modal/ModalBox";
+import Projects from "./pages/projects/Projects";
 
 function App() {
   const location = useLocation();
@@ -26,16 +25,13 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       <Navbar openUp={openUp} />
       <Sidebar isOpen={isOpen} openUp={openUp} />
       <ModalBox showModal={showModal} setShowModal={setShowModal} />
-      <AnimatePresence
-        exitBeforeEnter
-        onExitComplete={() => setShowModal(false)}>
         <Switch location={location} key={location.pathname}>
-          <div className="app">
-            <Route path="/" exact component={Home} />
+          <div className="app__main">
+            <Route path="/" exact component={Hero} />
             <Route path="/about">
               <About handleShowModal={handleShowModal} />
             </Route>
@@ -43,7 +39,6 @@ function App() {
             <Route path="/contact" component={Contact} />
           </div>
         </Switch>
-      </AnimatePresence>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { MdEmail, MdPhoneIphone } from "react-icons/md";
 import ContactInfo from "../../components/contactInfo/ContactInfo";
 import ContactForm from "../../components/contactMeForm/ContactForm";
@@ -14,12 +13,6 @@ const Contact = () => {
   const breakpoint = 768;
 
   return (
-    <motion.div
-      style={{ overflowX: "hidden" }}
-      initial={{ opacity: 0, x: "-100vw" }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: "100vw" }}
-      transition={{ duration: 0.5 }}>
       <Background>
         <div className="container">
           <SectionTitle
@@ -43,7 +36,6 @@ const Contact = () => {
           </SocialWrapper>
         </div>
       </Background>
-    </motion.div>
   );
 };
 
