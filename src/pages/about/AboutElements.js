@@ -31,7 +31,7 @@ export const AboutWrapper = styled.div`
     align-items: center;
     justify-content: space-evenly;
     width: 95%;
-    min-height: 100%;
+    height: 100vh;
     text-align: left;
     gap: 2rem;
     padding-bottom: 4rem;

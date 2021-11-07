@@ -1,4 +1,3 @@
-import React from "react";
 import { MdEmail, MdPhoneIphone } from "react-icons/md";
 import ContactInfo from "../../components/contactInfo/ContactInfo";
 import ContactForm from "../../components/contactMeForm/ContactForm";
@@ -13,29 +12,29 @@ const Contact = () => {
   const breakpoint = 768;
 
   return (
-      <Background>
-        <div className="container">
-          <SectionTitle
-            className="title"
-            subheading="Let's Create Something"
-            heading="Contact Me"
-            upper
-          />
-          <div className="content">
-            <div className="left">
-              <ContactInfo icon={<MdPhoneIphone />} text="(561) 781-2819" />
-              <ContactInfo icon={<MdEmail />} text="crisner.prsvr@gmail.com" />
-              <ContactInfo text="Murfreesboro, TN" />
-            </div>
-            <div className="right">
-              <ContactForm />
-            </div>
+    <Background>
+      <div className="container">
+        <SectionTitle
+          className="title"
+          subheading="Let's Create Something"
+          heading="Contact Me"
+          upper
+        />
+        <div className="content">
+          <div className="left">
+            <ContactInfo icon={<MdPhoneIphone />} text="(561) 781-2819" />
+            <ContactInfo icon={<MdEmail />} text="crisner.prsvr@gmail.com" />
+            <ContactInfo text="Murfreesboro, TN" />
           </div>
-          <SocialWrapper>
-            {width <= breakpoint && <SocialButtons />}
-          </SocialWrapper>
+          <div className="right">
+            <ContactForm />
+          </div>
         </div>
-      </Background>
+        <SocialWrapper>
+          {width <= breakpoint && <SocialButtons />}
+        </SocialWrapper>
+      </div>
+    </Background>
   );
 };
 

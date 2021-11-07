@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import data from "../../assets/data/data.json";
+import data from "../../assets/data/data";
 import TextAnimation from "../../components/animations/TextAnimation";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import {
