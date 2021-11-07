@@ -10,6 +10,7 @@ export const Section = styled.section`
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: contain;
   z-index: 1;
 
   @media only screen and (max-width: 768px) {

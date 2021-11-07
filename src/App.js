@@ -34,12 +34,14 @@ function App() {
         exitBeforeEnter
         onExitComplete={() => setShowModal(false)}>
         <Switch location={location} key={location.pathname}>
-          <Route path="/" exact component={Home} />
-          <Route path="/about">
-            <About handleShowModal={handleShowModal} />
-          </Route>
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
+          <div className="app">
+            <Route path="/" exact component={Home} />
+            <Route path="/about">
+              <About handleShowModal={handleShowModal} />
+            </Route>
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={Contact} />
+          </div>
         </Switch>
       </AnimatePresence>
     </div>
