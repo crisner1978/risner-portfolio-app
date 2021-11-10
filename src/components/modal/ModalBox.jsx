@@ -62,14 +62,22 @@ const ModalBox = ({ showModal, setShowModal }) => {
                 <li>Front End Development Libraries</li>
                 <hr />
                 <li>Back End Development and APIs</li>
+                <hr />
+                <li>Quality Assurance</li>
+                <hr />
+                <li>Information Security</li>
+                <hr />
               </ul>
             </TopBox>
             <BottomBox>
               <h2>My Skills</h2>
               <ul>
-                <li>HTML & CSS</li>
+                <li>HTML</li>
                 <hr />
-                <li>Javascript</li>
+                <li>CSS</li>
+                <hr />
+
+                <li>JS</li>
                 <hr />
                 <li>Bootstrap</li>
                 <hr />
@@ -86,6 +94,8 @@ const ModalBox = ({ showModal, setShowModal }) => {
                 <li>Mongoose</li>
                 <hr />
                 <li>Chai</li>
+                <hr />
+                <li>Helmet</li>
               </ul>
             </BottomBox>
           </ModalWrapper>

@@ -17,8 +17,8 @@ export const ModalContainer = styled(motion.div)`
 `;
 
 export const ModalWrapper = styled.div`
-  max-width: 500px;
-  height: 420px;
+  max-width: auto;
+  height: max-content;
   background: #acb8bf;
   color: #00040d;
   display: grid;

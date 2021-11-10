@@ -1,5 +1,13 @@
 export const posters = [
   {
+    id: 0,
+    title: "Instagram Clone Project",
+    content: "React/Next JS - Firebase v9, Next-Auth & Tailwind",
+    image: "/poster-image/instaRise.png",
+    liveUrl: "https://instagram-rise-app.vercel.app/",
+    codeUrl: "https://github.com/crisner1978/instagram-rise-app",
+  },
+  {
     id: 1,
     title: "Reddit Clone Project",
     content: "React JS, Firebase v9 Auth/Firestore & Zustand",

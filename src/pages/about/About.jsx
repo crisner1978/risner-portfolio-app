@@ -33,8 +33,8 @@ const About = ({ handleShowModal }) => {
             variants={showRight}
             initial="hidden"
             animate="visible">
-            React JS and Redux are my passion. Building full stack projects with
-            React JS and Redux, utilizing Firebase, Serverless Frameworks or the
+            Building full stack projects with React JS || Next JS and Redux ||
+            Recoil || Zustand, utilizing Firebase, Serverless Frameworks or the
             MERN stack is my current focus.
           </AboutDesc>
           <ButtonWrapper>
