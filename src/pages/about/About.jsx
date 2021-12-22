@@ -33,9 +33,10 @@ const About = ({ handleShowModal }) => {
             variants={showRight}
             initial="hidden"
             animate="visible">
-            Building full stack projects with React JS || Next JS and Redux ||
-            Recoil || Zustand, utilizing Firebase, Serverless Frameworks or the
-            MERN stack is my current focus.
+            Building full stack projects with Next JS || React JS, MongoDB,
+            React-Query along with either Redux || Recoil || Zustand, utilizing
+            Serverless Frameworks, Firebase, AWS or the MERN stack is my current
+            focus.
           </AboutDesc>
           <ButtonWrapper>
             <ButtonBig name="My Toolbox" primary onClick={handleShowModal} />
