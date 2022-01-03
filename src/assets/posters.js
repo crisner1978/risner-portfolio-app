@@ -1,6 +1,14 @@
 export const posters = [
   {
     id: 0,
+    title: "Snow Legend Malamute",
+    content: "Next JS/React, Tailwind & Sendgrid",
+    image: "/poster-image/malamutes.png",
+    liveUrl: "https://www.snowlegendmalamutes.com/",
+    codeUrl: "https://github.com/crisner1978/malamutes",
+  },
+  {
+    id: 1,
     title: "Therapeutic Hair & Scalp",
     content: "Next JS/React, MongoDB, Next-Auth & Tailwind",
     image: "/poster-image/therapeuticSalon.png",
@@ -8,7 +16,7 @@ export const posters = [
     codeUrl: "https://github.com/crisner1978/therapeutic-hair-salon",
   },
   {
-    id: 1,
+    id: 2,
     title: "Instagram Clone Project",
     content: "Next JS/React, Firebase v9, Next-Auth & Tailwind",
     image: "/poster-image/instaRise.png",
@@ -16,7 +24,7 @@ export const posters = [
     codeUrl: "https://github.com/crisner1978/instagram-rise-app",
   },
   {
-    id: 2,
+    id: 3,
     title: "Reddit Clone Project",
     content: "React JS, Firebase v9 Auth/Firestore & Zustand",
     image: "/poster-image/Reddit clone.png",
@@ -24,7 +32,7 @@ export const posters = [
     codeUrl: "https://github.com/crisner1978/reddit-project",
   },
   {
-    id: 3,
+    id: 4,
     title: "Airbnb Clone Project",
     content: "Next JS/React App with MongoDB & Tailwind",
     image: "/poster-image/airbnb-clone.png",
@@ -32,7 +40,7 @@ export const posters = [
     codeUrl: "https://github.com/crisner1978/airbnb-mongodb-app",
   },
   {
-    id: 4,
+    id: 5,
     title: "Linkedin Clone Project",
     content: "React JS app with Redux and Firebase",
     image: "/poster-image/Linkedin-clone.png",
@@ -40,7 +48,7 @@ export const posters = [
     codeUrl: "https://github.com/crisner1978/linkedin-clone-app",
   },
   {
-    id: 5,
+    id: 6,
     title: "Netflix Clone Project",
     content: "React JS app with Redux, Firebase and Stripe",
     image: "/poster-image/Netflix Clone Project.png",
@@ -49,7 +57,7 @@ export const posters = [
       "https://github.com/crisner1978/netflix-clone-project/tree/main/src",
   },
   {
-    id: 6,
+    id: 7,
     title: "Microservice APIs",
     content: "Node, Express, MongoDB and Mongoose",
     image: "/poster-image/Microservice Projects.png",
@@ -58,7 +66,7 @@ export const posters = [
       "https://github.com/crisner1978/chirs-risner-microservice-portfolio-app",
   },
   {
-    id: 7,
+    id: 8,
     title: "Pomodoro Clock",
     content: "React JS app with Redux and Styled Components",
     image: "/poster-image/Pomodoro.png",
@@ -66,7 +74,7 @@ export const posters = [
     codeUrl: "https://github.com/crisner1978/pomodoro-clock-app",
   },
   {
-    id: 8,
+    id: 9,
     title: "Inedecision App",
     content: "React JS app with Redux and Bootstrap",
     image: "/poster-image/Indecision App.png",
@@ -75,7 +83,7 @@ export const posters = [
       "https://github.com/crisner1978/indecision-app-toolkit/tree/master",
   },
   {
-    id: 9,
+    id: 10,
     title: "Message Board",
     content: "Node JS, Chai, Helmet, MongoDB & Bootstrap",
     image: "/poster-image/messageboard.png",

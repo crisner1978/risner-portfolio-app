@@ -13,11 +13,11 @@ const Poster = ({ id, image, title, content, liveUrl, codeUrl }) => {
       as={motion.div}
       initial={{ opacity: 0, x: "-100vw" }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: 0.5, duration: 0.5 }}
+      transition={{ delay: 0.1, duration: 0.5 }}
       whileHover={{
         scale: 1.05,
         boxShadow: "-10px 10px 10px #00040d",
-        transition: "linear",
+        transition: "ease-in",
       }}>
       <motion.img
         variants={magic}
