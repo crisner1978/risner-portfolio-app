@@ -2,40 +2,19 @@ import styled from "styled-components";
 
 
 export const Background = styled.section`
-  background: -webkit-linear-gradient(
-    to bottom right,
-    black,
-    #010d26 35%,
-    #203a43 55%,
-    #021133 70%
-  );
-  background: linear-gradient(
-    to bottom right,
-    black,
-    #010d26 35%,
-    #203a43 55%,
-    #021133 70%
-  );
-  
-  height: 100vh;
-  width: 100%;
-  padding-top: 8rem; 
-  overflow-x: hidden;
+background: #191919;
+color: #636363;
+padding-top: 96px;
+padding-bottom: 96px;
 
   .container {
     display: flex;
     max-width: 1200px;
-    /* max-height: 1000px; */
     flex-direction: column;
     margin: 0 auto;
     margin-top: 1rem;
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
     width: 100%;
-    height: 100%;
     text-align: center;
-    
-    /* gap: 4rem; */
   }
 
 

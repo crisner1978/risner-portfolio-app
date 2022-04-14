@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { NavLink as Link } from "react-router-dom";
+import {Link} from 'react-scroll'
 import { FaDev } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  background: #00040d;
+  background: ${({ showNav }) => (showNav ? '#00040d' : "transparent")} ;
   height: 70px;
-  margin-top: -70px;
+  margin-top: -71px;
   display: flex;
   justify-content: center;
   align-items: center;

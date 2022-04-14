@@ -13,5 +13,5 @@
   display: flex;
   flex-direction: column;
   background: black;
-  
+  scroll-behavior: smooth;
 }

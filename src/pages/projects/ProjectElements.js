@@ -17,7 +17,7 @@ export const Section = styled.section`
   );
   height: 100%;
   width: 100%;
-  padding: 8rem 0 4rem 0;
+  padding: 4rem 0 4rem 0;
   margin: 0;
   overflow-x: hidden;
   text-align: center;

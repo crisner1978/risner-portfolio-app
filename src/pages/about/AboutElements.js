@@ -3,25 +3,12 @@ import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
   /* position: relative; */
-  padding: 6rem 0 4rem 0;
+  padding: 4rem;
   margin: 0;
-  height: 100%;
-  width: 100%;
-  background: -webkit-linear-gradient(
-    to bottom right,
-    black,
-    #010d26 35%,
-    #203a43 55%,
-    #021133 70%
-  );
-  background: linear-gradient(
-    to bottom right,
-    black,
-    #010d26 35%,
-    #203a43 55%,
-    #021133 70%
-  );
-  
+  background: #2B2B2B;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
 
   .container {
     display: flex;
@@ -31,25 +18,20 @@ export const AboutWrapper = styled.div`
     align-items: center;
     justify-content: space-evenly;
     width: 95%;
-    height: 100vh;
     text-align: left;
     gap: 2rem;
-    padding-bottom: 4rem;
   }
   .right {
       max-width: 300px;
       max-height: 300px;
       background-color: #e9ebed;
-      padding: 0.5rem;
+      padding: 0.25rem;
       display: flex;
       align-items: center;
       justify-content: center;
       box-shadow: -10px 10px 10px #00040d;
+      border-radius: 50%;
     }
-
-  .left {
-    margin-top: 3rem;
-  }
 
   .section-title {
     text-align: left;
@@ -66,10 +48,6 @@ export const AboutWrapper = styled.div`
       
     }
     .left,
-    .right {
-      width: 100%;
-      
-    }
     .left {
       margin-top: 1rem;
     }
@@ -82,15 +60,15 @@ export const AboutWrapper = styled.div`
 
 export const AboutDesc = styled(motion.div)`
   font-family: "Roboto Mono";
-  color: #e9ebed;
+  color: #7A7A7A;
   text-align: left;
-  max-width: 500px;
-  font-size: 1.3rem;
-  line-height: 1.75rem;
+  max-width: 600px;
+  font-size: 15px;
+  
+  line-height: 30px;
   margin-top: 1rem;
   /* margin-left: 0; */
-  padding: 1.2rem 1.2rem;
-  background-color: #00040d;
+  padding: 0;
   @media only screen and (max-width: 768px) {
     width: 90%;
     max-width: 460px;
@@ -115,7 +93,7 @@ export const ButtonWrapper = styled.div`
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: -18px;
   z-index: 1;
 

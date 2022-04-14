@@ -7,7 +7,7 @@ import { Container, ProjectWrapper, Section } from "./ProjectElements";
 
 const Projects = () => {
   return (
-    <Section>
+    <Section id="projects">
       <SectionTitle
         subheading="some of my recent work"
         Animation={<TextAnimation text="Projects" />}

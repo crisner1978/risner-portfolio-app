@@ -10,8 +10,8 @@ export const TitleWrapper = styled.div`
 
   h2 {
     font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 3.5rem;
+    font-weight:  ${({ hero }) => (hero ? '600' : "400")};
+    font-size: ${({ hero }) => (hero ? "90px" : "3.5rem")} ;
     margin-top: 0.5rem;
     text-transform: ${({ upper }) => (upper ? "uppercase" : null)};
   }
@@ -22,7 +22,7 @@ export const TitleWrapper = styled.div`
     }
 
     h2 {
-      font-size: 2.5rem;
+      font-size: ${({ hero }) => (hero ? "3.5rem" : "2.5rem")};
     }
   }
 `;

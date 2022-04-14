@@ -1,19 +1,13 @@
-import {
-  Section,
-  Content,
-  Left,
-  TitleContainer,
-  Info,
-  SocialWrapper,
-  ButtonWrapper,
-} from "./HeroElements";
 import { motion } from "framer-motion";
-import SocialButtons from "../../components/social/SocialButtons";
-import useViewport from "../../components/useViewport";
-import ButtonBig from "../../components/button/ButtonBig";
-import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import { useHistory } from "react-router-dom";
 import TextAnimation from "../../components/animations/TextAnimation";
+import ButtonBig from "../../components/button/ButtonBig";
+import SectionTitle from "../../components/sectionTitle/SectionTitle";
+import SocialButtons from "../../components/social/SocialButtons";
+import useViewport from "../../components/useViewport";
+import {
+  ButtonWrapper, Content, Info, Section, SocialWrapper, TitleContainer
+} from "./HeroElements";
 
 //framer motion variant
 const showLeft = {
@@ -33,35 +27,29 @@ const Hero = () => {
   const breakpoint = 768;
 
   return (
-    <Section>
-      <Content>
-        <Left>
+    <>
+      <Section id="home">
+        <Content>
           <TitleContainer>
             <SectionTitle
+              hero
               subheading="Developing DEV..."
               heading="Chris"
               Animation={<TextAnimation text="Risner" />}
             />
           </TitleContainer>
-          <Info
-            as={motion.div}
-            variants={showLeft}
-            initial="hidden"
-            animate="visible">
-            <span className="pro">Front End focused Full Stack <br/> JavaScript Developer</span>
-            <br />
-            with a Passion for <br/>
-            - React JS/Next JS, MongoDB and TailwindCSS.
+          <Info as={motion.div} variants={showLeft} initial="hidden" animate="visible">
+            <p className="pro">
+              Full Stack <span>React Developer</span> I eat, sleep and breathe React
+            </p>
           </Info>
-          <ButtonWrapper>
-            <ButtonBig name="View Projects" onClick={handleClick} primary />
-          </ButtonWrapper>
-          <SocialWrapper>
-            {width <= breakpoint && <SocialButtons />}
-          </SocialWrapper>
-        </Left>
-      </Content>
-    </Section>
+          {/* <ButtonWrapper>
+            <ButtonBig name="View Projects" BS  onClick={handleClick} primary smooth={true} duration={500} spy={true} exact="true" offset={-70} />
+          </ButtonWrapper> */}
+          <SocialWrapper>{width <= breakpoint && <SocialButtons />}</SocialWrapper>
+        </Content>
+      </Section>
+    </>
   );
 };
 

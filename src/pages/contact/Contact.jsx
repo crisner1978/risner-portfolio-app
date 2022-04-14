@@ -12,7 +12,7 @@ const Contact = () => {
   const breakpoint = 768;
 
   return (
-    <Background>
+    <Background id="contact">
       <div className="container">
         <SectionTitle
           className="title"

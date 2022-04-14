@@ -33,18 +33,15 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <ModalBox showModal={showModal} setShowModal={setShowModal} />
       </Suspense>
-      <Switch location={location} key={location.pathname}>
-        <div className="app__main">
-          <Route path="/" exact component={Hero} />
 
-          <Route path="/about">
-            <About handleShowModal={handleShowModal} />
-          </Route>
-          <Route path="/projects" component={Projects} />
+      <div className="app__main">
 
-          <Route path="/contact" component={Contact} />
-        </div>
-      </Switch>
+        <Hero handleShowModal={handleShowModal} />
+        <About handleShowModal={handleShowModal} />
+        <Projects />
+        <Contact />
+      </div>
+
     </div>
   );
 }

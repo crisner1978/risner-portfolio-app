@@ -5,10 +5,11 @@ const SectionTitle = ({
   subheading,
   heading,
   Animation,
+  hero = false,
   upper = false,
 }) => {
   return (
-    <TitleWrapper upper={upper}>
+    <TitleWrapper upper={upper} hero={hero}>
       <motion.p
         as={motion.p}
         initial={{ opacity: 0 }}
@@ -17,6 +18,7 @@ const SectionTitle = ({
         {subheading}
       </motion.p>
       <motion.h2
+       
         as={motion.h2}
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 1 }}

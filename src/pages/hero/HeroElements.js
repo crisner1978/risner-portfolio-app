@@ -1,16 +1,16 @@
 import styled from "styled-components";
-import BgImg from "../../assets/images/bg-img.jpg";
+import BgImg from "../../assets/images/header-background.jpg";
 import { motion } from "framer-motion";
 
 export const Section = styled.section`
   background-image: url(${BgImg});
   margin: 0;
-  padding: 10rem 0;
+  padding: 0;
   height: 100vh;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: contain;
+  object-fit: cover;
   z-index: 1;
 
   @media only screen and (max-width: 768px) {
@@ -20,11 +20,12 @@ export const Section = styled.section`
 
 export const Content = styled.div`
   display: flex;
+  flex-direction: column;
   max-width: 1200px;
   margin: auto auto;
-  margin-top: 3rem;
+  
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   height: 100%;
   z-index: 3;
@@ -42,24 +43,6 @@ export const Content = styled.div`
   }
 `;
 
-export const Left = styled.div`
-  margin-left: 200px;
-  transition: ease-out 0.5s all;
-
-  @media only screen and (min-height: 1200px) {
-    padding: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    transition: ease-out 0.4s all;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media screen and (max-width: 480px) {
-    padding-top: auto;
-    margin-bottom: auto;
-  }
-`;
 
 export const TitleContainer = styled.div`
   @media only screen and (max-width: 768px) {
@@ -68,24 +51,31 @@ export const TitleContainer = styled.div`
 `;
 
 export const Info = styled(motion.div)`
-  font-family: "Roboto Mono";
+  font-family: "Montserrat";
   font-weight: 400;
-  max-width: 401px;
-  font-size: 1.3rem;
+  font-size: 18px;
   color: #e9ebed;
   line-height: 1.75rem;
-  margin-top: 1rem;
-  padding: 1.2rem 1.2rem;
-  background-color: #00040d;
+  
+  padding: 20px 0;
   transition: ease-out 0.4s all;
 
   .pro {
-    display: block;
+    font-family: "Roboto Mono";
+    font-size: 19px;
+    letter-spacing: -1px;
+    color: #A8A8A8;
+    margin: 0 auto;
+    width: 100%;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+  }
+  span {
+    color: #fff;
   }
 
   @media only screen and (max-width: 900px) {
     width: 100%;
-    text-align: left;
+    text-align: center;
     font-size: 1.3rem;
   }
 
