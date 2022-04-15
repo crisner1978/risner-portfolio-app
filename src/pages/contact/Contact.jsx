@@ -3,7 +3,7 @@ import ContactInfo from "../../components/contactInfo/ContactInfo";
 import ContactForm from "../../components/contactMeForm/ContactForm";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import SocialButtons from "../../components/social/SocialButtons";
-import useViewport from "../../lib/hooks/useViewport";
+import useViewport from "../../components/useViewport";
 import { Background, SocialWrapper } from "./ContactElements";
 
 const Contact = () => {

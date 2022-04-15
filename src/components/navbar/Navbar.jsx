@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
 import SocialButtons from "../social/SocialButtons";
-import useViewport from "../../lib/hooks/useViewport";
+import useViewport from "../useViewport";
 import {
   MobileIcon, Nav,
   NavbarContainer, NavIcon, NavItem,

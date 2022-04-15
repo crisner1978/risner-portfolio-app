@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BgImg from "../../lib/assets/images/header-background.jpg"
+import BgImg from "../../assets/images/header-background.jpg"
 import { motion } from "framer-motion";
 
 export const Section = styled.section`

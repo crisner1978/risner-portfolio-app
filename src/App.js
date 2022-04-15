@@ -1,16 +1,14 @@
 import { lazy, Suspense, useState } from "react";
-import { useLocation } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import About from "./sections/about/About";
-import Contact from "./sections/contact/Contact";
-import Hero from "./sections/hero/Hero";
-import Projects from "./sections/projects/Projects";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
+import Hero from "./pages/hero/Hero";
+import Projects from "./pages/projects/Projects";
 const ModalBox = lazy(() => import("./components/modal/ModalBox"));
 const Sidebar = lazy(() => import("./components/sidebar/Sidebar"));
 
 function App() {
-  const location = useLocation();
 
   //for Modal
   const [showModal, setShowModal] = useState(false);

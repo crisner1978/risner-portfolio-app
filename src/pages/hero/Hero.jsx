@@ -4,7 +4,7 @@ import TextAnimation from "../../components/animations/TextAnimation";
 import ButtonBig from "../../components/button/ButtonBig";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import SocialButtons from "../../components/social/SocialButtons";
-import useViewport from "../../lib/hooks/useViewport";
+import useViewport from "../../components/useViewport";
 import {
   ButtonWrapper, Content, Info, Section, SocialWrapper, TitleContainer
 } from "./HeroElements";
