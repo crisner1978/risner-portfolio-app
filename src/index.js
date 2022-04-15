@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./lib/hooks/ScrollToTop"
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

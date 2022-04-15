@@ -1,9 +1,9 @@
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import { AboutWrapper, AboutDesc, ButtonWrapper } from "./AboutElements";
 import { SocialWrapper } from "../hero/HeroElements";
-import ProfileImg from "../../assets/images/profilePhoto.jpg";
+import ProfileImg from "../../lib/assets/images/profilePhoto.jpg";
 import { motion } from "framer-motion";
-import useViewport from "../../components/useViewport";
+import useViewport from "../../lib/hooks/useViewport";
 import ButtonBig from "../../components/button/ButtonBig";
 import SocialButtons from "../../components/social/SocialButtons";
 

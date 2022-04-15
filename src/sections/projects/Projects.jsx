@@ -1,5 +1,5 @@
 import React from "react";
-import { posters } from "../../assets/posters";
+import { posters } from "../../lib/assets/posters";
 import TextAnimation from "../../components/animations/TextAnimation";
 import Poster from "../../components/poster/Poster";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";

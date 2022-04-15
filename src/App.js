@@ -1,11 +1,11 @@
-import { Suspense, useState, lazy } from "react";
-import { Route, Switch, useLocation } from "react-router-dom";
+import { lazy, Suspense, useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import Hero from "./pages/hero/Hero";
-import Contact from "./pages/contact/Contact";
-import Projects from "./pages/projects/Projects";
-import About from "./pages/about/About";
+import About from "./sections/about/About";
+import Contact from "./sections/contact/Contact";
+import Hero from "./sections/hero/Hero";
+import Projects from "./sections/projects/Projects";
 const ModalBox = lazy(() => import("./components/modal/ModalBox"));
 const Sidebar = lazy(() => import("./components/sidebar/Sidebar"));
 
@@ -35,8 +35,7 @@ function App() {
       </Suspense>
 
       <div className="app__main">
-
-        <Hero handleShowModal={handleShowModal} />
+        <Hero />
         <About handleShowModal={handleShowModal} />
         <Projects />
         <Contact />
