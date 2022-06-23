@@ -22,7 +22,7 @@ export const SocialIcons = styled.a`
   font-weight: bolder;
 
   &:hover {
-    transform: scale(1.3);
+    transform: scale(1.3) rotate(360deg);
     transition: ease-in-out 0.4s all;
     color: #e9ebed;
   }

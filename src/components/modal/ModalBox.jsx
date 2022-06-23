@@ -76,20 +76,37 @@ const ModalBox = ({ showModal, setShowModal }) => {
                 <hr />
                 <li>CSS</li>
                 <hr />
-
                 <li>JS</li>
                 <hr />
-                <li>Bootstrap</li>
+                <li>TS</li>
                 <hr />
-                <li>React</li>
+                <li>React JS</li>
+                <hr />
+                <li>Next JS</li>
                 <hr />
                 <li>Redux</li>
                 <hr />
-                <li>Node</li>
+                <li>Recoil</li>
+                <hr />
+                <li>Bootstrap</li>
+                <hr />
+                <li>TailwindCSS</li>
+                <hr />
+                <li>Styled Components</li>
+                <hr />
+                <li>Node JS</li>
                 <hr />
                 <li>Express</li>
                 <hr />
+                <li>Firebase</li>
+                <hr />
+                <li>RESTful APIs</li>
+                <hr />
                 <li>MongoDB</li>
+                <hr />
+                <li>Sanity</li>
+                <hr />
+                <li>GraphCMS</li>
                 <hr />
                 <li>Mongoose</li>
                 <hr />
